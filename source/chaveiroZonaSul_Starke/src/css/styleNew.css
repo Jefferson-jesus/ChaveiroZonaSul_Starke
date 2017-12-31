@@ -25,7 +25,7 @@ body{
 
 .colorImg{
     /* border-image-outset: inherit; */
-    background-color: deepskyblue;
+    background-color: #00a2e8;
     
 }
 
@@ -35,7 +35,7 @@ body{
 }
 
 .h2{
-    color: rgb(3, 109, 247);
+    color: #00a2e8;
 }
 
 .aviso24{   
@@ -56,7 +56,7 @@ body{
 
 .avisoText{
     margin-left: 10px;
-    color: blue;
+    color: #00a2e8;
 }
 
 .AvisoH4{
@@ -78,16 +78,55 @@ body{
 }
 
 .StyleDivYellow{
-  background-color: yellow;
+  background-color: #ffd907;
 }
 .txtBlue{
-  color: deepskyblue;
+  color: #00a2e8;
   margin-top: 3%;
 }
 
+.imgRelogio{
+  width: 80%;  
+}
 
+.HorasCol24{
+  text-align: left;
+  color:  #00a2e8;
+}
+.txt24Horas{
+  font-size: 25px;
+  -webkit-text-stroke: 2px;
+}
 
+.styleEscolher{
+  margin-left: 20%;
+  margin-right: auto;
+}
 
+.styleDivBlue{
+  background-color: #00a2e8;
+}
+
+.styleAlinharAEsquerda{
+  text-align: left;
+}
+
+.txtTamanho{
+  margin-top: 5px;
+  width: 100%
+  
+}
+
+.txtMsg{
+  height: 150px;
+}
+.divRowStyleMaps{
+  margin-left: auto;
+  margin-right: auto;
+}
+.topblue{
+  margin-top: 15px;
+}
 /* Tratamento da imagem */
 /* Included color classes.. 
 	.red 
