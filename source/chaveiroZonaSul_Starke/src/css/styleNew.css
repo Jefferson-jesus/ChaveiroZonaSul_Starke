@@ -1,18 +1,76 @@
+@font-face {
+  font-family: Poppins-Light;
+  src: url('../font/Poppins-Light.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../font/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../font/Poppins-Bold.ttf');
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+
+.container-fluid {
+  margin: 0 !important;
+  padding: 0px !important;
+}
+
+html {
+  margin: 0;
+}
+
 body{
     text-align: center;
+    font-family: Poppins-Regular;
+    margin: 0;
 }
+
+b {
+  font-family: Poppins-Bold;
+}
+
+#header {
+  width: 100%; 
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 999999999999999999999999999999;
+}
+
+#header-bg {
+  background: rgba(0,0,0,0);
+  height: 110px;
+  margin-top: -18px;
+  z-index: 0;
+  position: fixed;
+  width: 100%;
+  transition:height .3s, background .3s;
+  padding:10px;
+}
+
+#header.op #header-bg {
+  background: #028cc7;
+}
+
 .imgPrinci{
     margin: center;   
     height: 20%;
     page-break-after: auto;  
 }
 
-.img01{
-    /* background-image: url("../imagens/fechaduraEletronica01.jpg"); */
-    background-position: top left;
-    height: 30%;
-    width: 100%;    
-    opacity: 0.4;
+.colorImg{
+    background-image: url("../imagens/banner_cm.jpg");
+    background-position: center;
+    height: 560px;
+    width: auto;
+    background-size: cover;    
+    
 }
 
 /* .img02{  
@@ -23,75 +81,156 @@ body{
     opacity: 0.4; 
 } */
 
-.colorImg{
-    /* border-image-outset: inherit; */
-    background-color: #00a2e8;
-    
-}
 
 .alinpagerCenter{  
     height: 20%;
    
 }
 
-.h2{
-    color: #00a2e8;
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.aviso24{   
-    background-color: gold;
-    width: 50%;
-    height: 130px;
-    margin-left: auto;
-    margin-top: -3%;
-    opacity: 1 !important;
-    z-index: 99999999;
-    margin-right: auto;
-    position: sticky;
-    display: block;
-    border-radius: 10px;
-    box-shadow: 0px 5px 50px 0 #0000002e;
-  
+.aviso24{
+  background-color: #ffd907;
+  width: 900px;
+  height: 238px;
+  margin-left: auto;
+  margin-top: -5%;
+  opacity: 1 !important;
+  z-index: 99999999;
+  margin-right: auto;
+  position: sticky;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0px 5px 50px 0 #0000002e;
 }
 
-.avisoText{
-    margin-left: 10px;
-    color: #00a2e8;
+
+.avisoText2 {
+  align-self: center;
+  text-align: left;
 }
 
-.AvisoH4{
-    /* margin-top: -19%; */
+.nameC {
+  font-size: 3rem;
+  font-family: Poppins-Bold;
+  margin-bottom: -18px;
+  color: #00a2e8;
 }
 
-.SerH2{
-    color: darkgray;
+.sloganC {
+  font-size: 1.3rem;
+  font-family: Poppins-Light;
+  color: #666;
+  margin-bottom: 10px;
 }
 
-.divServicos{
-    background-color: gainsboro;
+.telC {
+  color: #00a2e8;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
-.posison{
+
+.sp {
+  color: #e4c309 ;
+}
+
+.col-3.avisoText {
+  height: auto;
+  margin-top: 3px;
+}
+
+.avisoText .hours{
+  font-family: Poppins-Bold;
+  font-size: 6em;
+  align-self: center;
+  color: #00a2e8;
+  height: auto;
+}
+
+.hours {
+  margin: 0;
+  margin-bottom: -45px;
+}
+
+.textHours {
+  font-size: 2.5rem;
+  color: #00a2e8;
+  margin: 0;
+  margin-top: -5px;  
+}
+
+.SerH2, .sobre-content h2{
+    color: #777777;
+    font-family: Poppins-Bold;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.SerH3{
+  color: #ffffff;
+  font-family: Poppins-Bold;
+}
+
+.SerH {
+  color: #00a2e8;
+}
+
+.SerH b{
+  font-family: Poppins-Bold;
+}
+
+#servicos {
+  background-color: #f8f8f8;
+  padding-top: 30px;
+}
+
+#chaveirozs {
+  background-color: #ffd907;
+}
+
+#contato {
+  background-color: #00a2e8;
+}
+
+/* .posison{
     text-align: -webkit-center;
     margin-left: 5%;
     margin-right: 5%;
     opacity: 0.5;
-}
+} */
 
-.StyleDivYellow{
-  background-color: #ffd907;
-}
 .txtBlue{
   color: #00a2e8;
   margin-top: 3%;
 }
 
-.imgRelogio{
-  width: 80%;  
+.imgC{
+  width: 70%;  
+}
+
+.title-c {
+  font-family: Poppins-Bold;
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  margin-bottom: -5px;
+}
+
+.textC {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: Poppins-Light;
 }
 
 .HorasCol24{
   text-align: left;
   color:  #00a2e8;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .txt24Horas{
   font-size: 25px;
@@ -99,8 +238,8 @@ body{
 }
 
 .styleEscolher{
-  margin-left: 20%;
-  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .styleDivBlue{
@@ -120,10 +259,7 @@ body{
 .txtMsg{
   height: 150px;
 }
-.divRowStyleMaps{
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .topblue{
   margin-top: 15px;
 }
@@ -134,21 +270,20 @@ body{
 	.yellow 
 */
 
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+
 figure.snip1104 {
-  font-family: 'Raleway', Arial, sans-serif;
+  font-family: Poppins-Regular, Arial, sans-serif;
   position: relative;
   float: left;
   overflow: hidden;
-  margin: 10px 1%;
-  min-width: 220px;
-  max-width: 310px;
-  max-height: 220px;
-  width: 100%;
-  background: #000000;
+  margin: 25px;
+  height: 235px;
+  width: 235px;
+  background: #00a2e8 ;
   color: #ffffff;
   text-align: center;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.20);
 }
 
 figure.snip1104 * {
@@ -161,7 +296,7 @@ figure.snip1104 * {
 figure.snip1104 img {
   max-width: 100%;
   position: relative;
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 figure.snip1104 figcaption {
@@ -173,17 +308,14 @@ figure.snip1104 figcaption {
 }
 
 figure.snip1104 h2 {
-  position: absolute;
-  left: 40px;
-  right: 40px;
-  display: inline-block;
-  background: #000000;
-  -webkit-transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
-  transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
-  padding: 12px 5px;
+  font-family: Poppins-Bold;
+  font-size: 1.5rem;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
   margin: 0;
-  top: 50%;
-  text-transform: uppercase;
+  top: 90px;
   font-weight: 400;
 }
 
@@ -191,7 +323,7 @@ figure.snip1104 h2 span {
   font-weight: 800;
 }
 
-figure.snip1104:before {
+/* figure.snip1104:before {
   height: 100%;
   width: 100%;
   top: 0;
@@ -203,7 +335,7 @@ figure.snip1104:before {
   transition: all 0.3s ease-in-out;
   -webkit-transform: rotate(110deg) translateY(-50%);
   transform: rotate(110deg) translateY(-50%);
-}
+} */
 
 figure.snip1104 a {
   left: 0;
@@ -212,30 +344,6 @@ figure.snip1104 a {
   bottom: 0;
   position: absolute;
   z-index: 1;
-}
-
-figure.snip1104.blue {
-  background: #123851;
-}
-
-figure.snip1104.blue h2 {
-  background: #0a212f;
-}
-
-figure.snip1104.red {
-  background: #581a14;
-}
-
-figure.snip1104.red h2 {
-  background: #36100c;
-}
-
-figure.snip1104.yellow {
-  background: #7f5006;
-}
-
-figure.snip1104.yellow h2 {
-  background: #583804;
 }
 
 figure.snip1104:hover img,
@@ -256,3 +364,339 @@ figure.snip1104.hover:before {
   -webkit-transform: rotate(110deg) translateY(-150%);
   transform: rotate(110deg) translateY(-150%);
 }
+
+/* MENU */
+
+header.topo {
+  display: flex;
+  width: 1230px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 15px;
+  z-index: 30;
+}
+
+.menu {
+  display: flex;
+  color: #fff;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-self: center;
+}
+
+.menu .item-menu {
+  list-style-type: none;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+}
+
+.menu .item-menu:last-child {
+  list-style-type: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid #fff;
+  border-radius: 5px
+}
+
+.topo .logo {
+  flex: 1;
+}
+
+.item-menu a {
+  color: #fff !important;
+}
+
+.logo img {
+  display: block;
+  height: 80px;
+  width: auto;
+}
+
+.maps iframe {
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+#contato p {
+  color: #fff;
+}
+
+#contato .col-7 {
+  align-self: center;
+}
+
+.telefones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-self: center;
+  height: 100%;
+}
+
+.telefones p {
+  text-align: center !important;
+  font-size: 2rem;
+  font-family: Poppins-Bold;
+  align-content: center;
+  display: block;
+  line-height: 1.9rem;
+}
+
+.telefones h2 {
+  margin-bottom: 1.4rem;
+  color: #fff;
+  font-family: Poppins-Bold;
+}
+
+/* FORMULÁRIO */
+
+.form-control, textarea {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 2;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+  background-clip: padding-box;
+  border: 1px solid #ffffff;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-control:focus, textarea:focus {
+  color: #495057;
+  background-color: #ffffff14;
+  border-color: #ffd907;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 217, 7, 0.11);
+}
+
+.form-control::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
+  color: #fff;
+}
+
+button {
+  margin-top: 10px;
+  width: 100px;
+  display: block;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 2;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+  background-clip: padding-box;
+  border: 1px solid #ffffff;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+button:hover {
+  background-color: #ffd907; 
+  color: #00a2e8; 
+  border: 1px solid #ffd907; 
+}
+
+footer {
+  height: 50px;
+  background-color: #018cc7;
+  color: rgba(255, 255, 255, 0.342);
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.342);
+}
+
+footer a:hover {
+  color: rgba(255, 255, 255, 0.342);
+}
+
+
+
+.starke-info {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .avisoText3 {
+    display: none; 
+  }
+
+  .bannerMobail{
+    display: none;    
+  }
+
+  .avisoText4 {
+    background-color: #25D366;
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: center;
+  }
+
+  .hours-m {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .text-atnd {
+    font-family: Poppins-Bold;
+    font-size: 1.3rem;
+    color: #fff;
+  }
+
+  .avisoText4 .text-m {
+    margin-top: 0px;
+    color: #fff !important;
+
+  }
+
+  .avisoText4 .telC-M {
+    color: #fff;
+    line-height: 1.7rem;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-family: Roboto;
+    font-weight: 700;
+  }
+
+}
+
+/****** RESPONSIVO ******/
+
+@media screen and (max-width: 768px) {
+  .aviso24 {
+      display: flex;
+      width: 90%;
+      margin-top: -45px;
+      height: auto !important;
+      flex-direction: column;
+      flex-wrap: nowrap;
+  }
+
+  .avisoText2 .nameC, .sloganC, .telC, .aviso24 .form-group{
+    display: none;
+  }
+
+  .bannerMovel{
+    display: none;
+  }
+
+  .number {
+    font-size: 4rem;
+    font-family: Poppins-bold, Arial;
+    color: #01a2e9;
+    text-align: center;
+  }
+
+  .avisoText3, .avisoText4 {
+      padding: 20px;
+      width: 100%;
+  }
+
+  .nameC-M {
+    font-size: 2rem;
+    font-family: Poppins-Bold;
+    color: #777;
+  }
+
+  .text-m {
+    margin-top: -25px;
+  }
+
+  .telC-M {
+    margin-top: 5px;
+    font-size: 1.8rem;
+    font-family: Roboto;
+    color: #777;
+    font-weight: 800;
+    line-height: 1.7rem;
+  }
+
+  .avisoText4 {
+    background-color: #25D366;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .text-atnd {
+    font-family: Poppins-Bold;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  .avisoText4 .text-m {
+    margin-top: 0px;
+    color: #fff !important;
+  }
+
+  .avisoText4 .telC-M {
+    color: #fff;
+    line-height: 1.7rem;
+    margin-top: 10px;
+  }
+
+  figure.snip1104 {
+    height: auto;
+    width: 100%;
+    flex: 1 1 200px;
+  }
+
+  figure.snip1104 h2 {
+    font-size: 2.5rem;
+  }
+
+  .imgC {
+    width: 60%;
+  }
+
+  .title-c {
+    text-align: center;
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+
+  .textC {
+    text-align: center;
+  }
+
+  #contato p {
+    color: #fff;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .colorImg{
+    display: flex;
+    align-items: center;
+    height: 460px;
+  }
+
+}
+
+/* Banner FONT e AJUSTES */
+.d-none h2{
+  font-family: Poppins-Bold;
+  font-size: 3rem;
+}
+
+.d-none p{
+  margin-top: -15px;
+  font-size: 1.8rem;
+}
+
+.carousel-caption {
+  bottom: 120px;
+}
+
